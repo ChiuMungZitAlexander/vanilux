@@ -1,1 +1,5 @@
-declare module "vanilux" {}
+import createStore from "./src/createStore";
+
+declare module "vanilux" {
+  createStore;
+}
