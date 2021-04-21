@@ -1,11 +1,10 @@
 {
   "compilerOptions": {
-    "target": "es5",
-    "module": "CommonJS",
+    "outDir": "./dist/",
     "sourceMap": true,
-    "outDir": "build",
-    "rootDir": "src",
-    "strict": true
-  },
-  "include": ["src/**/*"]
+    "noImplicitAny": true,
+    "module": "es6",
+    "target": "es5",
+    "allowJs": true
+  }
 }
