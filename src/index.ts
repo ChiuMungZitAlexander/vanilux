@@ -15,7 +15,7 @@ interface ISubscribeFn {
   (curState: unknown): void;
 }
 
-export function createStore(
+export default function createStore(
   dispatcher: IDispatcher,
   initState: unknown
 ): IStore {
