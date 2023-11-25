@@ -29,3 +29,7 @@ yarn-error.log*
 
 # cache
 /.cache
+/.rollup.cache
+
+# build
+tsconfig.tsbuildinfo

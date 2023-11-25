@@ -1,12 +1,19 @@
 {
   "compilerOptions": {
-    "rootDir": ".",
-    "outDir": "./dist/",
-    "sourceMap": true,
-    "noImplicitAny": true,
-    "module": "es6",
     "target": "es5",
-    "allowJs": true
+    "lib": ["DOM", "DOM.Iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "incremental": true,
+    "baseUrl": "."
   },
-  "files": ["createStore.ts"]
+  "include": ["src/**/*.ts"],
+  "exclude": ["node_modules"]
 }
