@@ -21,19 +21,21 @@
   "module": "dist/bundle.esm.js",
   "exports": {
     "require": "./dist/bundle.umd.js",
-    "import": "./dist//bundle.esm.js"
+    "import": "./dist/bundle.esm.js"
   },
   "packageManager": "pnpm@8.11.0",
   "scripts": {
     "lint": "npx eslint . --ext .js,.jsx,.ts,.tsx",
     "test": "vitest",
-    "build": "rollup --config"
+    "build": "rollup --config",
+    "prepublish": "rollup --config"
   },
   "devDependencies": {
     "@rollup/plugin-terser": "^0.4.4",
     "@rollup/plugin-typescript": "^11.1.5",
     "@typescript-eslint/eslint-plugin": "^6.12.0",
     "@typescript-eslint/parser": "^6.12.0",
+    "dotenv": "^16.3.1",
     "eslint": "^8.54.0",
     "rollup": "^4.6.0",
     "tslib": "^2.6.2",
