@@ -11,9 +11,12 @@ test("Deep copy nullish", () => {
 test("Deep copy primitive type", () => {
   expect(deepCopy(1)).toBe(1);
   expect(deepCopy(BigInt(78))).toBe(BigInt(78));
-  expect(deepCopy(BigInt(""))).toBe(BigInt(""));
-  expect(deepCopy(BigInt("0x1234"))).toBe(BigInt("0x1234"));
-  expect(deepCopy(BigInt(true))).toBe(BigInt(true));
+  expect(deepCopy("")).toBe("");
+  expect(deepCopy(0x1234)).toBe(0x1234);
+  expect(deepCopy(true)).toBe(true);
+
+  const symbol = Symbol("foo");
+  expect(deepCopy(symbol)).toBe(symbol);
 });
 
 test("Deep copy array", () => {
