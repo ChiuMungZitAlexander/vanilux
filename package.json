@@ -23,7 +23,7 @@
     "require": "./dist/bundle.umd.js",
     "import": "./dist/bundle.esm.js"
   },
-  "packageManager": "pnpm@8.15.3",
+  "packageManager": "pnpm@9.6.0",
   "scripts": {
     "lint": "npx eslint . --ext .js,.jsx,.ts,.tsx",
     "test": "vitest",
@@ -37,9 +37,9 @@
     "@typescript-eslint/parser": "^7.1.1",
     "dotenv": "^16.4.5",
     "eslint": "^8.57.0",
-    "rollup": "^4.12.1",
-    "tslib": "^2.6.2",
-    "typescript": "^5.4.2",
-    "vitest": "^1.3.1"
+    "rollup": "^4.20.0",
+    "tslib": "^2.6.3",
+    "typescript": "^5.5.4",
+    "vitest": "^2.0.5"
   }
 }
