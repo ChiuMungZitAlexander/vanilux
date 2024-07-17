@@ -23,7 +23,7 @@
     "require": "./dist/bundle.umd.js",
     "import": "./dist/bundle.esm.js"
   },
-  "packageManager": "pnpm@8.15.6",
+  "packageManager": "pnpm@8.15.9",
   "scripts": {
     "lint": "npx eslint . --ext .js,.jsx,.ts,.tsx",
     "test": "vitest",
